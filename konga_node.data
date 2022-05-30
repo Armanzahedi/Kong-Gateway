@@ -1,0 +1,8 @@
+module.exports = [
+    {
+        "name": "Kong Connection",
+        "type": "default",
+        "kong_admin_url": "http://kong:8001",
+        "health_checks": false,
+    }
+]
