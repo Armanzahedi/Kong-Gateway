@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 29 12:02:47 2022
+# Make data base, printed on Sun Jun 26 11:05:53 2022
 
 # Variables
 
@@ -21,9 +21,9 @@ GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-49b30a66-0ca0-4004-9557-6d9a370c188f.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-04d784ce-e02d-4dc7-9fbb-8eee1e3b137b.sock
 # environment
-VSCODE_CWD = /home/armanzdi/Desktop/kong-net
+VSCODE_CWD = /home/armanzdi/Desktop/Kong-Gateway
 # default
 MAKE_COMMAND := make
 # environment
@@ -35,7 +35,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/armanzdi/Desktop/kong-net
+PWD = /home/armanzdi/Desktop/Kong-Gateway
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -51,23 +51,23 @@ VSCODE_CODE_CACHE_PATH = /home/armanzdi/.config/Code/CachedData/c3511e6c69bb3901
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.JT2DN1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.CDLHO1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.107
+GNOME_TERMINAL_SERVICE = :1.104
 # makefile
 MAKEFLAGS = pqrR
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=4740199f98305f7ef109778b629320b1
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=eac1e786ece1d0a3efdb4dcb62b7fe03
 # makefile
-CURDIR := /home/armanzdi/Desktop/kong-net
+CURDIR := /home/armanzdi/Desktop/Kong-Gateway
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
@@ -93,19 +93,19 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 24348
+VSCODE_PID = 4822
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/5796,unix/ubuntu:/tmp/.ICE-unix/5796
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/2332,unix/ubuntu:/tmp/.ICE-unix/2332
 # automatic
 *F = $(notdir $*)
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=4740199f98305f7ef109778b629320b1
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=eac1e786ece1d0a3efdb4dcb62b7fe03
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
@@ -123,7 +123,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a522ae4c_846b_4487_b2d2_559094f67f7c
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a050f271_712c_473c_9920_61c6fcbc2dc6
 # environment
 MAKELEVEL := 0
 # default
@@ -161,7 +161,7 @@ LOGNAME = armanzdi
 # makefile
 .DEFAULT_GOAL := run
 # environment
-SYSTEMD_EXEC_PID = 5796
+SYSTEMD_EXEC_PID = 2332
 # environment
 DISPLAY = :0
 # environment
@@ -221,7 +221,7 @@ GDMSESSION = ubuntu
 
 # Directories
 
-# . (device 2051, inode 1714505): 16 files, no impossibilities.
+# . (device 2051, inode 959646): 16 files, no impossibilities.
 
 # 16 files, no impossibilities in 1 directories.
 
@@ -234,7 +234,7 @@ GDMSESSION = ubuntu
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-23 16:58:25.830698486
+#  Last modified 2022-06-20 09:38:12.136268731
 #  File has been updated.
 #  Successfully updated.
 
@@ -244,6 +244,7 @@ clean:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 5):
 	docker-compose kill
+ 
 	docker-compose rm -f
 
 # Not a target:
@@ -280,6 +281,6 @@ run:
 # strcache performance: lookups = 29 / hit rate = 20%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=0/29=0%
-# Finished Make data base on Sun May 29 12:02:47 2022
+# Finished Make data base on Sun Jun 26 11:05:53 2022
 
  

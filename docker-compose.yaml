@@ -86,40 +86,40 @@ services:
       - KONGA_SEED_USER_DATA_SOURCE_FILE=/run/secrets/konga_user.data
       - KONGA_SEED_KONG_NODE_DATA_SOURCE_FILE=/run/secrets/konga_node.data
 
-  prometheus:
-    image: prom/prometheus
-    ports:
-      - 9090:9090
-    container_name: prometheus
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
-    restart: always
+  # prometheus:
+  #   image: prom/prometheus
+  #   ports:
+  #     - 9090:9090
+  #   container_name: prometheus
+  #   volumes:
+  #     - ./prometheus.yml:/etc/prometheus/prometheus.yml
+  #   command:
+  #     - '--config.file=/etc/prometheus/prometheus.yml'
+  #   restart: always
 
-  node_exporter:
-    image: prom/node-exporter:latest
-    ports:
-      - 9100:9100
-    container_name: node_exporter
-    restart: always
-    depends_on:
-      - prometheus
+  # node_exporter:
+  #   image: prom/node-exporter:latest
+  #   ports:
+  #     - 9100:9100
+  #   container_name: node_exporter
+  #   restart: always
+  #   depends_on:
+  #     - prometheus
 
-  grafana:
-    container_name: grafana
-    image: grafana/grafana
-    ports:
-      - 3000:3000
-    restart: always
-    links: 
-      - prometheus:prometheus
-    environment:
-      GF_INSTALL_PLUGINS: grafana-clock-panel, grafana-simple-json-datasource
-    depends_on:
-      - prometheus
-    volumes:
-      - grafana-storage:/var/lib/grafana
+  # grafana:
+  #   container_name: grafana
+  #   image: grafana/grafana
+  #   ports:
+  #     - 3000:3000
+  #   restart: always
+  #   links: 
+  #     - prometheus:prometheus
+  #   environment:
+  #     GF_INSTALL_PLUGINS: grafana-clock-panel, grafana-simple-json-datasource
+  #   depends_on:
+  #     - prometheus
+  #   volumes:
+  #     - grafana-storage:/var/lib/grafana
 
 
 volumes:
